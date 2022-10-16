@@ -1,4 +1,6 @@
-import '../../resources/pages/home_page.dart';
+import 'package:flutter_app/resources/pages/sign_in_page.dart';
+
+import '../resources/pages/onboarding_page.dart';
 import 'package:nylo_framework/nylo_framework.dart';
 
 /*
@@ -13,10 +15,14 @@ import 'package:nylo_framework/nylo_framework.dart';
 */
 
 appRouter() => nyRoutes((router) {
+      router.route("/", (context) => OnboardingPage(title: "Hello World"));
 
-  router.route("/", (context) => MyHomePage(title: "Hello World"));
+      // Add your routes here
+      router.route(
+        "/sign_in_page",
+        (context) => SignInPage(),
+        transition: PageTransitionType.leftToRight,
+      );
 
-  // Add your routes here
-
-  // router.route("/new-page", (context) => NewPage(), transition: PageTransitionType.fade);
-});
+      // router.route("/new-page", (context) => NewPage(), transition: PageTransitionType.fade);
+    });

@@ -17,6 +17,7 @@ class HomeController extends Controller {
   }
 
   onTapChangeLog() async {
-    await launchUrl(Uri.parse("https://github.com/nylo-core/framework/blob/3.x/CHANGELOG.md"));
+    await launchUrl(Uri.parse(
+        "https://github.com/nylo-core/framework/blob/3.x/CHANGELOG.md"));
   }
 }

@@ -13,6 +13,8 @@ abstract class ColorStyles extends BaseColorStyles {
   Color get primaryContent;
   Color get primaryAccent;
 
+  Color get primary;
+
   Color get surfaceBackground;
   Color get surfaceContent;
 
